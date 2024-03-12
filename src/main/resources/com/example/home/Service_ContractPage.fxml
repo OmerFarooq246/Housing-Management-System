@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.home.Service_ContractPage_Controller">
+   <children>
+      <AnchorPane prefHeight="62.0" prefWidth="700.0" style="-fx-background-color: #165B94;">
+         <children>
+            <Label id="LTables" alignment="CENTER" layoutX="229.0" layoutY="14.0" prefHeight="37.0" prefWidth="241.0" style="-fx-border-color: #eeeeee; -fx-border-radius: 2; -fx-border-width: 0;" text="Service_Contract" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI Bold" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="btBack" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#BackButtonController" prefHeight="25.0" prefWidth="75.0" text="Back">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="210.0" layoutY="90.0" mnemonicParsing="false" onAction="#SearchButtonController" prefHeight="25.0" prefWidth="75.0" text="Search">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="305.0" layoutY="90.0" mnemonicParsing="false" onAction="#InsertButtonController" prefHeight="25.0" prefWidth="75.0" text="Insert">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="401.0" layoutY="90.0" mnemonicParsing="false" onAction="#DeleteButtonController" prefHeight="25.0" prefWidth="75.0" text="Delete">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="service_contractTable" layoutY="215.0" prefHeight="310.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="Contract_ID" prefWidth="75.0" text="Contract_ID" />
+          <TableColumn fx:id="Service_ID" prefWidth="75.0" text="Service_ID" />
+            <TableColumn fx:id="Company" prefWidth="75.0" text="Company" />
+            <TableColumn fx:id="Start_Date" prefWidth="75.0" text="Start_Date" />
+            <TableColumn fx:id="End_Date" prefWidth="75.0" text="End_Date" />
+            <TableColumn fx:id="Amount" prefWidth="75.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Label layoutX="43.0" layoutY="139.0" text="Contract_ID:">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfid" layoutX="43.0" layoutY="159.0" prefHeight="25.0" prefWidth="90.0" />
+      <Label layoutX="148.0" layoutY="139.0" text="Service_ID:">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfsid" layoutX="148.0" layoutY="159.0" prefHeight="25.0" prefWidth="90.0" />
+      <Label layoutX="253.0" layoutY="139.0" text="Company:">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfcompany" layoutX="253.0" layoutY="159.0" prefHeight="25.0" prefWidth="90.0" />
+      <Label layoutX="358.0" layoutY="139.0" text="Start_Date:">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfsd" layoutX="358.0" layoutY="159.0" prefHeight="25.0" prefWidth="90.0" />
+      <Label layoutX="463.0" layoutY="139.0" text="End_Date:">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfed" layoutX="463.0" layoutY="159.0" prefHeight="25.0" prefWidth="90.0" />
+      <Label layoutX="568.0" layoutY="139.0" text="Amount:">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfamount" layoutX="568.0" layoutY="159.0" prefHeight="25.0" prefWidth="90.0" />
+   </children>
+</AnchorPane>

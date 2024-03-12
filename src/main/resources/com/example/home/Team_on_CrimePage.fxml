@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.home.Team_on_CrimePage_Controller">
+   <children>
+      <AnchorPane prefHeight="62.0" prefWidth="700.0" style="-fx-background-color: #165B94;">
+         <children>
+            <Label id="LTables" alignment="CENTER" layoutX="244.0" layoutY="14.0" prefHeight="37.0" prefWidth="211.0" style="-fx-border-color: #eeeeee; -fx-border-radius: 2; -fx-border-width: 0;" text="Team_on_Crime" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI Bold" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="btBack" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#BackButtonController" prefHeight="25.0" prefWidth="75.0" text="Back">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="215.0" layoutY="90.0" mnemonicParsing="false" onAction="#SearchButtonController" prefHeight="25.0" prefWidth="75.0" text="Search">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="310.0" layoutY="90.0" mnemonicParsing="false" onAction="#InsertButtonController" prefHeight="25.0" prefWidth="75.0" text="Insert">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="409.0" layoutY="90.0" mnemonicParsing="false" onAction="#DeleteButtonController" prefHeight="25.0" prefWidth="75.0" text="Delete">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="team_on_crimeTable" layoutY="215.0" prefHeight="310.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="Crime_ID" prefWidth="75.0" text="Crime_ID" />
+          <TableColumn fx:id="Team_ID" prefWidth="75.0" text="Team_ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="188.0" layoutY="140.0" text="Crime_ID:">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfcrimeid" layoutX="188.0" layoutY="160.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="363.0" layoutY="140.0" text="Team_ID:">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfteamid" layoutX="363.0" layoutY="160.0" prefHeight="25.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

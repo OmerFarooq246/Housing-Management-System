@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #165B94;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.home.HomePage_Controller">
+   <children>
+      <AnchorPane prefHeight="63.0" prefWidth="750.0" style="-fx-background-color: #eeeeee;">
+         <children>
+            <Label layoutX="25.0" layoutY="11.0" text="HOME" textFill="#165b94">
+               <font>
+                  <Font name="Britannic Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="271.0" layoutY="17.0" prefHeight="30.0" prefWidth="207.0" text="[name] Database" textFill="#165b94">
+               <font>
+                  <Font name="HP Simplified" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label id="LTables" alignment="CENTER" layoutX="310.0" layoutY="76.0" prefHeight="37.0" prefWidth="129.0" style="-fx-border-color: #eeeeee; -fx-border-radius: 2; -fx-border-width: 0;" text="TABLES" textFill="#eeeeee">
+         <font>
+            <Font name="Segoe UI Bold" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="btProperty" layoutX="25.0" layoutY="135.0" mnemonicParsing="false" onAction="#PropertyButtonController" prefHeight="25.0" prefWidth="75.0" text="Property">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btOwner" layoutX="115.0" layoutY="135.0" mnemonicParsing="false" onAction="#OwnerButtonController" prefHeight="25.0" prefWidth="75.0" text="Owner">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCustomer" layoutX="205.0" layoutY="135.0" mnemonicParsing="false" onAction="#CustomerButtonController" prefHeight="25.0" prefWidth="75.0" text="Customer">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btProperty_Purchases" layoutX="295.0" layoutY="135.0" mnemonicParsing="false" onAction="#Property_PurchasesButtonController" prefHeight="25.0" prefWidth="135.0" text="Property_Purchases">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btPaid_Installments" layoutX="445.0" layoutY="135.0" mnemonicParsing="false" onAction="#Paid_InstallmentsButtonController" prefHeight="25.0" prefWidth="120.0" text="Paid_Installments">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btServices" layoutX="25.0" layoutY="200.0" mnemonicParsing="false" onAction="#ServicesButtonController" prefHeight="25.0" prefWidth="75.0" text="Services">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btService_Contract" layoutX="205.0" layoutY="200.0" mnemonicParsing="false" onAction="#Service_ContractButtonController" prefHeight="25.0" prefWidth="120.0" text="Service_Contract">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btService_Connections" layoutX="340.0" layoutY="200.0" mnemonicParsing="false" onAction="#Service_ConnectionButtonController" prefHeight="25.0" prefWidth="135.0" text="Service_Connections">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btStaff" layoutX="335.0" layoutY="465.0" mnemonicParsing="false" onAction="#StaffButtonController" prefHeight="25.0" prefWidth="75.0" text="Staff">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btBlock" layoutX="25.0" layoutY="270.0" mnemonicParsing="false" onAction="#BlockButtonController" prefHeight="25.0" prefWidth="75.0" text="Block">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btStreet" layoutX="115.0" layoutY="270.0" mnemonicParsing="false" onAction="#StreetButtonController" prefHeight="25.0" prefWidth="75.0" text="Street">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btContracts" layoutX="115.0" layoutY="335.0" mnemonicParsing="false" onAction="#ContractsButtonController" prefHeight="25.0" prefWidth="75.0" text="Contracts">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btContractor" layoutX="25.0" layoutY="335.0" mnemonicParsing="false" onAction="#ContractorButtonController" prefHeight="25.0" prefWidth="75.0" text="Contractor">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCrime" layoutX="25.0" layoutY="400.0" mnemonicParsing="false" onAction="#CrimeButtonController" prefHeight="25.0" prefWidth="75.0" text="Crime">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btSuspects" layoutX="115.0" layoutY="400.0" mnemonicParsing="false" onAction="#SuspectsButtonController" prefHeight="25.0" prefWidth="75.0" text="Suspects">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btSecurity_Team_Info" layoutX="25.0" layoutY="465.0" mnemonicParsing="false" onAction="#Security_Team_InfoButtonController" prefHeight="25.0" prefWidth="135.0" text="Security_Team_Info">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btTeam_on_Crime" layoutX="175.0" layoutY="465.0" mnemonicParsing="false" onAction="#Team_on_CrimeButtonController" prefHeight="25.0" prefWidth="120.0" text="Team_on_Crime">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btComplain" layoutX="115.0" layoutY="200.0" mnemonicParsing="false" onAction="#ComplainButtonController" prefHeight="25.0" prefWidth="75.0" text="Complain">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btHospital_Clinic" layoutX="580.0" layoutY="135.0" mnemonicParsing="false" onAction="#Hospital_ClinicButtonController" prefHeight="25.0" prefWidth="120.0" text="Hospital/Clinic">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btUsers" layoutX="425.0" layoutY="465.0" mnemonicParsing="false" onAction="#UsersButtonController" prefHeight="25.0" prefWidth="75.0" text="Users">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="25.0" layoutY="110.0" text="Property:" textFill="#eeeeee" underline="true">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="175.0" text="Services:" textFill="#eeeeee" underline="true">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="310.0" text="Contracts:" textFill="#eeeeee" underline="true">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="375.0" text="Crime:" textFill="#eeeeee" underline="true">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="440.0" text="Security:" textFill="#eeeeee" underline="true">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="440.0" text="Staff and Users:" textFill="#eeeeee" underline="true">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="245.0" text="Locations:" textFill="#eeeeee" underline="true">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="tfTerminal" layoutX="25.0" layoutY="544.0" prefHeight="27.0" prefWidth="700.0" style="-fx-border-color: #eeeeee; -fx-border-width: 1.3; -fx-border-radius: 3; -fx-border-insets: -1;" text="  &gt;_ " textFill="#ebebeb">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

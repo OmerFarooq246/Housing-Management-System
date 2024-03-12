@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.home.BlockPage_Controller">
+   <children>
+      <AnchorPane prefHeight="62.0" prefWidth="700.0" style="-fx-background-color: #165B94;">
+         <children>
+            <Label id="LTables" alignment="CENTER" layoutX="277.0" layoutY="14.0" prefHeight="37.0" prefWidth="129.0" style="-fx-border-color: #eeeeee; -fx-border-radius: 2; -fx-border-width: 0;" text="Block" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI Bold" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="btBack" layoutX="11.0" layoutY="21.0" mnemonicParsing="false" onAction="#BackButtonController" prefHeight="25.0" prefWidth="75.0" text="Back">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="215.0" layoutY="95.0" mnemonicParsing="false" onAction="#SearchButtonController" prefHeight="25.0" prefWidth="75.0" text="Search">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btInsert" layoutX="310.0" layoutY="95.0" mnemonicParsing="false" onAction="#InsertButtonController" prefHeight="25.0" prefWidth="75.0" text="Insert">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="405.0" layoutY="95.0" mnemonicParsing="false" onAction="#DeleteButtonController" prefHeight="25.0" prefWidth="75.0" text="Delete">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="blockTable" layoutY="215.0" prefHeight="310.0" prefWidth="700.0">
+         <columns>
+            <TableColumn fx:id="block_ID" prefWidth="75.0" text="Block_ID" />
+            <TableColumn fx:id="Block_Name" prefWidth="75.0" text="Block_Name" />
+            <TableColumn fx:id="No_ofProperties" prefWidth="75.0" text="No_ofProperties" />
+            <TableColumn fx:id="size" prefWidth="75.0" text="size" />
+         </columns></TableView>
+      <TextField fx:id="tfID" layoutX="20.0" layoutY="165.0" prefHeight="25.0" prefWidth="140.0" promptText="Enter block_id" />
+      <TextField fx:id="tfname" layoutX="190.0" layoutY="165.0" prefHeight="25.0" prefWidth="140.0" promptText="Enter block_name" />
+      <TextField fx:id="tfno" layoutX="360.0" layoutY="165.0" prefHeight="25.0" prefWidth="140.0" promptText="Enter no of properties" />
+      <TextField fx:id="tfsize" layoutX="530.0" layoutY="165.0" prefHeight="25.0" prefWidth="140.0" promptText="Enter size" />
+      <Label layoutX="20.0" layoutY="145.0" text="Block_ID: ">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="145.0" text="Block_Name: ">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="360.0" layoutY="145.0" text="No_ofProperties: ">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="530.0" layoutY="145.0" text="size: ">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
